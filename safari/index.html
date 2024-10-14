@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20241014172616">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link" data-page="home">Home</a></li>
+							<li class="menu__item"><a href="clothes.html" class="menu__link" data-page="clothes">Clothes</a></li>
+							<li class="menu__item"><a href="shoes.html" class="menu__link" data-page="shoes">Shoes</a></li>
+							<li class="menu__item"><a href="accessories.html" class="menu__link" data-page="accessories">Accessories</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="index.html" class="header__logo">
+					<img src="img/header/logo.svg" alt="Logo">
+				</a>
+				<div class="header__actions actions-header">
+					<form action="#" class="header__form form-header">
+						<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Search..." class="form-header__input">
+						<button type="submit" class="form-header__button _icon-search"></button>
+						<button type="button" class="form-header__icon _icon-search"></button>
+					</form>
+					<a href="account-info.html" class="actions-header__item _icon-user" data-page="dashboard"></a>
+					<a href="account-cart.html" class="actions-header__item _icon-cart" data-page="cart"></a>
+					<a href="account-favorit.html" class="actions-header__item _icon-favorit" data-page="favorites"></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main">
+				<!-- Оболонка слайдера -->
+				<div class="main__slider swiper">
+					<!-- Частина слайдера, що рухається -->
+					<div class="main__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="main__slide swiper-slide">
+							<div class="main__image">
+								<img src="img/main/1.webp" alt="Image">
+							</div>
+						</div>
+						<div class="main__slide swiper-slide">
+							<div class="main__image">
+								<img src="img/main/1.webp" alt="Image">
+							</div>
+						</div>
+						<div class="main__slide swiper-slide">
+							<div class="main__image">
+								<img src="img/main/1.webp" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__logo">
+					<img src="img/main/logo.svg" alt="Image">
+				</div>
+				<div class="main__footer">
+					<!-- Якщо потрібна пагінація -->
+					<div class="main__pagination"></div>
+					<h2 class="main__title">Explore our collection</h2>
+					<button data-goto-header data-goto=".main-catalog" type="button" class="main__button _icon-explore"></button>
+				</div>
+			</section>
+			<section class="page__main-catalog main-catalog">
+				<div class="main-catalog__header">
+					<h1 class="main-catalog__title"><span>Shop your style</span></h1>
+					<p class="main-catalog__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae gravida cursus
+						adipiscing viverra at tortor, egestas odio parturient. Morbi ut lorem in erat.
+						Et et molestie diam diam ultricies. Scelerisque duis diam ac cras dictum
+						adipiscing. Venenatis at sit proin ut vitae adipiscing id facilisis.
+					</p>
+				</div>
+				<div class="main-catalog__container">
+					<div class="main-catalog__items items-catalog">
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/1.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Multicolored armless top</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/2.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Grey bee wrist-watch</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/3.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Mini skirt</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/4.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Red lightweight gown</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/5.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Blue botton-down gown</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/6.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Moon and star neckpiece</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/7.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Tambourine Crossbody Bag </a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/8.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Katy Perry Killer Queen EDP</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/9.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">High heels ladies shoes</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/10.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Nerdy oval glasses</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/11.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Ladies bush pants </a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/12.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Diamond ladies ring</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/13.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Guilhermina Embellished Slides</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/14.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Superga Plaid Sneakers</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/15.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Checked ladies trouser</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+						<article class="items-catalog__item item-catalog">
+							<div class="item-catalog__main">
+								<a href="#" class="item-catalog__image">
+									<img data-src="img/catalog/16.webp" alt="Image">
+								</a>
+								<div class="item-catalog__actions">
+									<button type="submit" class="item-catalog__favorite _icon-heart"></button>
+									<button type="submit" class="item-catalog__add-to-cart _icon-cart">add to cart</button>
+								</div>
+							</div>
+							<div class="item-catalog__footer">
+								<h3 class="item-catalog__title">
+									<a class="item-catalog__link" href="#">Beanie winter fleece</a>
+								</h3>
+								<div class="item-catalog__price">₦ 10,000</div>
+							</div>
+						</article>
+					</div>
+					<div class="main-catalog__pagging pagging">
+						<div class="pagging__container">
+							<a href="#" class="pagging__arrow _icon-arrow"></a>
+							<ul class="pagging__list">
+								<li>
+									<a href="#" class="pagging__item _active">1</a>
+								</li>
+								<li>
+									<a href="#" class="pagging__item">2</a>
+								</li>
+								<li>
+									<a href="#" class="pagging__item">3</a>
+								</li>
+							</ul>
+							<a href="#" class="pagging__arrow _icon-arrow"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="index.html" class="footer__logo">
+					<img src="img/header/logo.svg" alt="Image">
+				</a>
+				<div class="footer__body body-footer">
+					<nav class="body-footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">About Us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Contact</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Terms & Conditions</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="body-footer__social social-footer">
+						<ul class="social-footer__list">
+							<li class="social-footer__item">
+								<a href="#" class="social-footer__link _icon-facebook">Facebook</a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" class="social-footer__link _icon-twitter">Twitter</a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" class="social-footer__link _icon-instagram">Instagram</a>
+							</li>
+						</ul>
+					</div>
+					<div class="body-footer__subscribe subscribe-footer">
+						<h3 class="subscribe-footer__title">Subscribe to our newsletter</h3>
+						<form action="#" class="subscribe-footer__form">
+							<input autocomplete="off" type="text" name="form[]" data-required data-error="Error" placeholder="Email Address" class="subscribe-footer__input">
+							<button type="submit" class="subscribe-footer__button">ok</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__contacts contacts-footer">
+					<ul class="contacts-footer__list">
+						<li class="contacts-footer__item">
+							<a href="#" class="contacts-footer__link">497 Evergreen Rd. Roseville, CA 95673</a>
+						</li>
+						<li class="contacts-footer__item">
+							<a href="tel:+44345678903" class="contacts-footer__link">+44 345 678 903</a>
+						</li>
+						<li class="contacts-footer__item">
+							<a href="mailto:adobexd@mail.com" class="contacts-footer__link">adobexd@mail.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button data-goto-speed="1000" data-goto=".wrapper" type="button" class="button-up _icon-arrow"></button>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241014172616"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Account Orders</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20241014172616">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link" data-page="home">Home</a></li>
+							<li class="menu__item"><a href="clothes.html" class="menu__link" data-page="clothes">Clothes</a></li>
+							<li class="menu__item"><a href="shoes.html" class="menu__link" data-page="shoes">Shoes</a></li>
+							<li class="menu__item"><a href="accessories.html" class="menu__link" data-page="accessories">Accessories</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="index.html" class="header__logo">
+					<img src="img/header/logo.svg" alt="Logo">
+				</a>
+				<div class="header__actions actions-header">
+					<form action="#" class="header__form form-header">
+						<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Search..." class="form-header__input">
+						<button type="submit" class="form-header__button _icon-search"></button>
+						<button type="button" class="form-header__icon _icon-search"></button>
+					</form>
+					<a href="account-info.html" class="actions-header__item _icon-user" data-page="dashboard"></a>
+					<a href="account-cart.html" class="actions-header__item _icon-cart" data-page="cart"></a>
+					<a href="account-favorit.html" class="actions-header__item _icon-favorit" data-page="favorites"></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__account account">
+				<div class="account__container">
+					<div class="account__info">
+						<div class="account__columns">
+							<aside class="account__menu menu-account menu-account--bg">
+								<h2 class="menu-account__title">ACCOUNT DASHBOARD</h2>
+								<ul class="menu-account__list">
+									<li class="menu-account__item" data-page="account-info">
+										<a href="account-info.html" class="menu-account__link _icon-account">Account Information</a>
+									</li>
+									<li class="menu-account__item" data-page="account-address">
+										<a href="account-address.html" class="menu-account__link _icon-address">Address Book</a>
+									</li>
+									<li class="menu-account__item" data-page="account-orders">
+										<a href="account-orders.html" class="menu-account__link _icon-order">My Orders</a>
+									</li>
+									<li class="menu-account__item" data-page="account-favorit">
+										<a href="account-favorit.html" class="menu-account__link _icon-favorit">My Favorites</a>
+									</li>
+								</ul>
+								<button type="button" class="menu-account__button _icon-signout">SIGN OUT</button>
+							</aside>
+							<section class="account__content">
+								<h1 class="account__title">My Orders</h1>
+								<div class="account__block block-orders">
+									<table class="block-orders__table">
+										<tr class="table__row">
+											<td class="table__cell cell">
+												<div class="cell__item order-block">
+													<div class="order-block__body">
+														<a href="#" class="order-block__image">
+															<img src="img/checkout/2.webp" alt="Image">
+														</a>
+														<div class="order-block__info">
+															<a href="#" class="order-block__title">Casual flat loafers</a>
+															<div class="order-block__size">Size - EU: 36 US: 5.5</div>
+															<div class="order-block__price">₦ 10,000</div>
+															<div class="order-block__quantity">Qty: 1</div>
+														</div>
+													</div>
+													<div class="order-block__footer">
+														<div class="order-block__status">Delivered</div>
+														<div class="order-block__date">On 20/07/2020</div>
+													</div>
+												</div>
+											</td>
+											<td class="table__cell cell">
+												<div class="cell__item cell__item--padding">
+													<h4 class="cell__title">Payment details</h4>
+													<div class="cell__body">
+														<div class="cell__row">Item’s total - ₦ 10,000</div>
+														<div class="cell__row">Delivery fee - ₦ 2,000</div>
+														<div class="cell__row">TOTAL - ₦ 12,000</div>
+													</div>
+												</div>
+											</td>
+											<td class="table__cell cell">
+												<div class="cell__item cell__item--padding">
+													<h4 class="cell__title">Delivery method</h4>
+													<div class="cell__body">
+														<div class="cell__row">Door delivery</div>
+													</div>
+													<h4 class="cell__title">Shipping address</h4>
+													<div class="cell__body">
+														<div class="cell__row">Ayokunle Oriolowo <br> 4, Barnawa Close, Barnawa Kaduna.</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<div class="block-orders__actions">
+										<button type="button" class="button-account">ORDER AGAIN</button>
+										<button type="button" class="button-account button-account--white">REQUEST A RETURN</button>
+									</div>
+									<table class="block-orders__table">
+										<tr class="table__row">
+											<td class="table__cell cell">
+												<div class="cell__item order-block">
+													<div class="order-block__body">
+														<a href="#" class="order-block__image">
+															<img src="img/checkout/1.webp" alt="Image">
+														</a>
+														<div class="order-block__info">
+															<a href="#" class="order-block__title">Multicolored armless top</a>
+															<div class="order-block__size">Size - XS</div>
+															<div class="order-block__price">₦ 10,000</div>
+															<div class="order-block__quantity">Qty: 1</div>
+														</div>
+													</div>
+													<div class="order-block__footer">
+														<div class="order-block__status order-block__status--color">To arrive</div>
+														<div class="order-block__date">On 20/07/2020</div>
+													</div>
+												</div>
+											</td>
+											<td class="table__cell cell">
+												<div class="cell__item cell__item--padding">
+													<h4 class="cell__title">Payment details</h4>
+													<div class="cell__body">
+														<div class="cell__row">Item’s total - ₦ 10,000</div>
+														<div class="cell__row">Delivery fee - ₦ 2,000</div>
+														<div class="cell__row">TOTAL - ₦ 12,000</div>
+													</div>
+												</div>
+											</td>
+											<td class="table__cell cell">
+												<div class="cell__item cell__item--padding">
+													<h4 class="cell__title">Delivery method</h4>
+													<div class="cell__body">
+														<div class="cell__row">Door delivery</div>
+													</div>
+													<h4 class="cell__title">Shipping address</h4>
+													<div class="cell__body">
+														<div class="cell__row">Ayokunle Oriolowo <br> 4, Barnawa Close, Barnawa Kaduna.</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="index.html" class="footer__logo">
+					<img src="img/header/logo.svg" alt="Image">
+				</a>
+				<div class="footer__body body-footer">
+					<nav class="body-footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">About Us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Contact</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Terms & Conditions</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="body-footer__social social-footer">
+						<ul class="social-footer__list">
+							<li class="social-footer__item">
+								<a href="#" class="social-footer__link _icon-facebook">Facebook</a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" class="social-footer__link _icon-twitter">Twitter</a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" class="social-footer__link _icon-instagram">Instagram</a>
+							</li>
+						</ul>
+					</div>
+					<div class="body-footer__subscribe subscribe-footer">
+						<h3 class="subscribe-footer__title">Subscribe to our newsletter</h3>
+						<form action="#" class="subscribe-footer__form">
+							<input autocomplete="off" type="text" name="form[]" data-required data-error="Error" placeholder="Email Address" class="subscribe-footer__input">
+							<button type="submit" class="subscribe-footer__button">ok</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__contacts contacts-footer">
+					<ul class="contacts-footer__list">
+						<li class="contacts-footer__item">
+							<a href="#" class="contacts-footer__link">497 Evergreen Rd. Roseville, CA 95673</a>
+						</li>
+						<li class="contacts-footer__item">
+							<a href="tel:+44345678903" class="contacts-footer__link">+44 345 678 903</a>
+						</li>
+						<li class="contacts-footer__item">
+							<a href="mailto:adobexd@mail.com" class="contacts-footer__link">adobexd@mail.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button data-goto-speed="1000" data-goto=".wrapper" type="button" class="button-up _icon-arrow"></button>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241014172616"></script>
+</body>
+
+</html>
