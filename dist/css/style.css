@@ -1026,7 +1026,7 @@ textarea.input {
   overflow: hidden
 }
 .portfolio-block__image {
-  background: url(/img/portfolio/phone.png) 0 0/100% 100% no-repeat;
+  background: url(img/portfolio/phone.png) 0 0/100% 100% no-repeat;
   position: absolute;
   top: 0;
   left: 0;
