@@ -1653,10 +1653,10 @@ textarea::placeholder {
   z-index: 1;
   width: 100%;
   height: 100%;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transform-origin: top;
-  transform-origin: top;
+  -webkit-transform: translate3d(0,0,0) !important;
+  transform: translate3d(0,0,0) !important;
+  -webkit-transform-origin: top !important;
+  transform-origin: top !important;
   transition: width .7s .7s,height .7s .7s,z-index 0s,box-shadow .3s ease 2s,-webkit-transform .6s;
   transition: transform .6s,width .7s .7s,height .7s .7s,z-index 0s,box-shadow .3s ease 2s;
   transition: transform .6s,width .7s .7s,height .7s .7s,z-index 0s,box-shadow .3s ease 2s,-webkit-transform .6s
