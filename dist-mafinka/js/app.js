@@ -22504,7 +22504,7 @@ PERFORMANCE OF THIS SOFTWARE.
             renderer: "svg",
             loop: false,
             autoplay: true,
-            path: "../../img/footer/instagram.json"
+            path: "../img/footer/instagram.json"
         });
         document.getElementById("instagram").addEventListener("mouseenter", (() => {
             insta.goToAndPlay(0, true);
@@ -22514,7 +22514,7 @@ PERFORMANCE OF THIS SOFTWARE.
             renderer: "svg",
             loop: false,
             autoplay: true,
-            path: "../../img/footer/facebook.json"
+            path: "../img/footer/facebook.json"
         });
         document.getElementById("facebook").addEventListener("mouseenter", (() => {
             facebook.goToAndPlay(0, true);
@@ -22524,7 +22524,7 @@ PERFORMANCE OF THIS SOFTWARE.
             renderer: "svg",
             loop: false,
             autoplay: true,
-            path: "../../img/footer/whatsapp.json"
+            path: "../img/footer/whatsapp.json"
         });
         document.getElementById("whatsapp").addEventListener("mouseenter", (() => {
             whatsapp.goToAndPlay(0, true);
