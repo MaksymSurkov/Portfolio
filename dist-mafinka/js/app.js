@@ -22665,7 +22665,7 @@ PERFORMANCE OF THIS SOFTWARE.
             renderer: "svg",
             loop: false,
             autoplay: true,
-            path: "../../img/footer/instagram.json"
+            path: "../img/footer/instagram.json"
         });
         document.getElementById("instagram").addEventListener("mouseenter", (() => {
             insta.goToAndPlay(0, true);
