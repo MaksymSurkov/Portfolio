@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20260331134028">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-scroll data-scroll-show>
+			<div class="header__container">
+				<a href="home.html" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">o nas</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">O projektu</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">kontakt</a></li>
+						</ul>
+						<div class="header__actions actions-header">
+							<form action="#" class="header__form form-header">
+								<div class="form-header__input">
+									<input data-required="" autocomplete="off" type="text" name="search" data-error="Error" placeholder="" class="input">
+								</div>
+								<button type="submit" class="form-header__button _icon-serch-ico"></button>
+								<button type="button" class="form-header__icon _icon-serch-ico"></button>
+							</form>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- К тегу main с классом page будет добавляться класс в зависимости от страницы -->
+		<!-- классов page__hero, page__about и так далее в WP не будет -->
+		<main class="page main-page">
+			<section class="hero-block">
+				<img src="img/hero/hero.png" alt="Hero Image" class="hero-block__image">
+				<div class="hero-block__container">
+					<div class="hero-block__content">
+						<h1 class="hero-block__title js-typing">Viladomy Labská</h1>
+						<h2 class="hero-block__description">
+							<span>Tohle není bydlení, které chce zaujmout každého.</span>
+							<span>Je to bydlení, které si najde ty správné.</span>
+						</h2>
+						<a href="#" class="hero-block__button _icon-arrow"><span>CHCI VĚDET VÍC</span></a>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль info-section -->
+			<section class="info-section">
+				<!-- <img src="img/about/plan-light.svg" alt="Plan Light Background" class="info-section__background"> -->
+				<div class="info-section__container" data-watch data-watch-once>
+					<div class="info-section__body">
+						<div class="info-section__content">
+							<div class="info-section__label">O projektu</div>
+							<!-- Будет два варианта тайтла: обычный и стронг (выбор в админке, условие if ) -->
+							<h2 class="info-section__title info-section__title--strong">Bydlení u řeky<strong>, v klidu města</strong></h2>
+							<h3 class="info-section__description">
+								<span>Viladomy Labská jsou rezidenční projekt v bezprostřední blízkosti řeky Labe. Nabízejí spojení městského komfortu s klidem, soukromím a výjimečnou architekturou.</span>
+							</h3>
+							<!-- Будет 2 вида кнопок: primary, secondary (выбор в админке, условие if ) -->
+							<a href="#" class="button button--secondary _icon-arrow"><span>button</span></a>
+						</div>
+						<div class="info-section__media">
+							<div class="info-section__image">
+								<img src="img/about/labska-vnitroblok-1.jpg" alt="Labska Vnitroblock 1">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль masked-section -->
+			<section class="masked-section">
+				<div class="masked-section__background">
+					<div class="masked-section__image">
+						<img src="img/koncept/Labska_nabrezi.jpg" alt="Labska Nabrezi">
+					</div>
+					<div class="masked-section__fill"></div>
+				</div>
+				<div class="masked-section__body">
+					<div class="masked-section__container">
+						<div class="masked-section__content">
+							<div class="masked-section__info">
+								<div class="masked-section__label">Koncept místa</div>
+								<!-- Будет два варианта тайтла: обычный и стронг (выбор в админке, условие if ) -->
+								<h2 class="masked-section__title masked-section__title--strong">Soukromí,<strong> kontakt s řekou, detail bez okázalosti.</strong></h2>
+								<h3 class="masked-section__description">
+									<span>Projekt vzniká na místě, kde se přirozeně potkává město s krajinou podél Labe. Každý dům je navržen tak, aby nabízel světlo, soukromí a klid, a zároveň zůstával plnohodnotnou součástí města.</span>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модифицированный Модуль info-section (класс info-section--dark убрать при переносе)-->
+			<section class="info-section info-section--dark">
+				<!-- <img src="img/about/plan-dark.svg" alt="Plan Light Background" class="info-section__background"> -->
+				<div class="info-section__container" data-watch data-watch-once>
+					<div class="info-section__body">
+						<div class="info-section__content">
+							<div class="info-section__label">Architektura</div>
+							<!-- Будет два варианта тайтла: обычный и стронг (выбор в админке, условие if ) -->
+							<h2 class="info-section__title">Architektura, která dýchá</h2>
+							<h3 class="info-section__description">
+								<span>Důraz je kladen na prostor, práci se světlem, kvalitu materiálů a dlouhodobou hodnotu. Architektonické řešení respektuje místo i každodenní komfort budoucích obyvatel.</span>
+							</h3>
+							<!-- Будет 2 вида кнопок: primary, secondary (выбор в админке, условие if ) -->
+							<a href="#" class="button button--primary _icon-arrow"><span>button</span></a>
+						</div>
+						<div class="info-section__media">
+							<div class="info-section__image">
+								<img src="img/schema.jpg" alt="Labska Vnitroblock 2">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль benefits-section -->
+			<section class="benefits-section">
+				<div class="benefits-section__container">
+					<div class="benefits-section__header">
+						<h2 class="benefits-section__title"><span>Standard bydlení</span></h2>
+					</div>
+					<div class="benefits-section__body">
+						<div class="benefits-section__items" data-watch data-watch-threshold="0.6" data-watch-once>
+							<!-- Repeater ACF -->
+							<article class="item-benefits">
+								<div class="item-benefits__icon _icon-mind"></div>
+								<h3 class="item-benefits__title">Promyšlené dispozice</h3>
+								<div class="item-benefits__description">
+									Enjoy lifestyle amenities designed to provide every homeowners modern comfort, a stone's throw away from schools, churches, and hospitals.
+								</div>
+							</article>
+							<article class="item-benefits">
+								<div class="item-benefits__icon _icon-medal"></div>
+								<h3 class="item-benefits__title">Vysoký standard materiálů</h3>
+								<div class="item-benefits__description">
+									You can connect with potential tenants without having to share your phone number. We also require all users to register to validate their legitimacy.
+								</div>
+							</article>
+							<article class="item-benefits">
+								<div class="item-benefits__icon _icon-eye"></div>
+								<h3 class="item-benefits__title">Soukromí a klid</h3>
+								<div class="item-benefits__description">
+									Find out how we provide the highest standard of professional property management to give you all the benefits of property.
+								</div>
+							</article>
+							<article class="item-benefits">
+								<div class="item-benefits__icon _icon-car"></div>
+								<h3 class="item-benefits__title">Parkování a komfort</h3>
+								<div class="item-benefits__description">
+									Not sure what you should be charging for your property? Let us do the numbers for you contact us today for a free rental appraisal on your home.
+								</div>
+							</article>
+							<article class="item-benefits">
+								<div class="item-benefits__icon _icon-les"></div>
+								<h3 class="item-benefits__title">Zeleň a vnitroblok</h3>
+								<div class="item-benefits__description">
+									Located in the city center close to the shopping center. Very good for areas surrounded by international education centers, start-up office centers.
+								</div>
+							</article>
+							<article class="item-benefits">
+								<div class="item-benefits__icon _icon-history"></div>
+								<h3 class="item-benefits__title">Historie místa</h3>
+								<div class="item-benefits__description">
+									Find out how we provide the highest standard of professional property management to give you all the benefits of property.
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль counters-section -->
+			<section class="counters-section">
+				<div class="counters-section__container">
+					<div class="counters-section__header">
+						<div class="counters-section__label">Neváhejte</div>
+						<h2 class="counters-section__title"><span>Objevte Viladomy Labská</span></h2>
+					</div>
+					<div class="counters-section__body">
+						<div class="items-counters" data-watch data-watch-once>
+							<!-- Repeater ACF -->
+							<div class="counter-item">
+								<div class="counter-item__number" data-digits-counter>78</div>
+								<div class="counter-item__label">bytových jednotek</div>
+							</div>
+							<div class="counter-item">
+								<div class="counter-item__number" data-digits-counter>37</div>
+								<div class="counter-item__label">parkovacích míst</div>
+							</div>
+							<div class="counter-item">
+								<div class="counter-item__number" data-digits-counter>40</div>
+								<div class="counter-item__label">sklepních kójí</div>
+							</div>
+							<div class="counter-item">
+								<div class="counter-item__number" data-digits-counter>7</div>
+								<div class="counter-item__label">nadzemních podlaží</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль galerie-section -->
+			<section class="galerie-section">
+				<div class="galerie-section__container">
+					<h2 class="galerie-section__title">Galerie vašeho nového domova</h2>
+					<div class="galerie-section__body">
+						<div data-gallery class="gallery">
+							<!-- repeater ACF -->
+							<!-- В alt писать название рисунка -->
+							<a href="img/galerie/1.jpg" class="gallery__image">
+								<img alt="image-1" src="img/galerie/1.jpg" class="gallery__preview">
+							</a>
+							<a href="img/galerie/2.jpg" class="gallery__image gallery__image--span">
+								<img alt="image-2" src="img/galerie/2.jpg" class="gallery__preview">
+							</a>
+							<a href="img/galerie/3.jpg" class="gallery__image gallery__image--span">
+								<img alt="image-3" src="img/galerie/3.jpg" class="gallery__preview">
+							</a>
+							<a href="img/galerie/4.jpg" class="gallery__image">
+								<img alt="image-4" src="img/galerie/4.jpg" class="gallery__preview">
+								<div class="gallery__more"><span>+10</span></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль masterplan-section -->
+			<section class="masterplan-section">
+				<div class="masterplan-section__label">Názvosloví viladomů</div>
+				<h2 class="masterplan-section__title">Přítoky Labe</h2>
+				<div class="masterplan-section__description">
+					<p>
+						Jednotlivé viladomy nesou názvy přítoků řeky Labe. Nejvýraznější domy u nábřeží jsou pojmenovány po největších a nejznámějších řekách, klidnější části projektu pak po menších, intimnějších tocích.
+					</p>
+				</div>
+				<div class="masterplan-section__body">
+					<div class="masterplan-section__image">
+						<img class="main-plan" src="img/masterplan/mainplan.png" alt="Main Plan">
+						<div class="jizera building">
+							<img src="img/masterplan/jizera.svg" alt="Jizera">
+							<a class="building__link" href="#" target="_blank">
+								<span>Jizera</span>
+							</a>
+						</div>
+						<div class="metuje building">
+							<img src="img/masterplan/metuje.svg" alt="Metuje">
+							<a href="#" target="_blank" class="building__link">
+								<span>Metuje</span>
+							</a>
+						</div>
+						<div class="ohre building">
+							<img src="img/masterplan/ohre.svg" alt="Ohre">
+							<a href="#" target="_blank" class="building__link">
+								<span>Ohře</span>
+							</a>
+						</div>
+						<div class="orlice building">
+							<img src="img/masterplan/orlice.svg" alt="Orlice">
+							<a href="#" target="_blank" class="building__link">
+								<span>Orlice</span>
+							</a>
+						</div>
+						<div class="ploucnice building">
+							<img src="img/masterplan/ploucnice.svg" alt="Ploucnice">
+							<a href="#" target="_blank" class="building__link">
+								<span>Ploučnice</span>
+							</a>
+						</div>
+						<div class="vltava building">
+							<img src="img/masterplan/vltava.svg" alt="Vltava">
+							<a href="#" target="_blank" class="building__link">
+								<span>Vltava</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модифицированный Модуль masked-section (класс masked-section--lokalita убрать при переносе) -->
+			<section class="masked-section masked-section--lokalita">
+				<div class="masked-section__background">
+					<div class="masked-section__image">
+						<img src="img/lokalita/Labska_nabrezi.jpg" alt="Labska Nabrezi">
+					</div>
+					<div class="masked-section__fill"></div>
+				</div>
+				<div class="masked-section__body">
+					<div class="masked-section__container">
+						<div class="masked-section__content">
+							<div class="masked-section__info">
+								<div class="masked-section__label">Lokalita</div>
+								<!-- Будет два варианта тайтла: обычный и стронг (выбор в админке, условие if ) -->
+								<h2 class="masked-section__title">Pardubice z jiné perspektivy</h2>
+								<h3 class="masked-section__description">
+									<span>Řeka, promenáda, zeleň a město v docházkové vzdálenosti. Lokalita nabízí výjimečný klid i plnohodnotný městský komfort.</span>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модифицированный Модуль info-section (класс info-section--showroom убрать при переносе)-->
+			<section class="info-section info-section--showroom">
+				<!-- <img src="img/about/plan-dark.svg" alt="Plan Light Background" class="info-section__background"> -->
+				<div class="info-section__container" data-watch data-watch-once>
+					<div class="info-section__body">
+						<div class="info-section__content">
+							<div class="info-section__label">Showroom a VR</div>
+							<!-- Будет два варианта тайтла: обычный и стронг (выбор в админке, условие if ) -->
+							<h2 class="info-section__title">Showroom a virtuální realita</h2>
+							<h3 class="info-section__description">
+								<span>Projekt Viladomy Labská si lze detailně prohlédnout v našem showroomu prostřednictvím virtuální reality. Díky VR získáte realistickou představu o architektuře, dispozicích i atmosféře bydlení ještě před zahájením prodeje. Prohlídka probíhá individuálně a v klidu.</span>
+							</h3>
+							<!-- Будет 2 вида кнопок: primary, secondary (выбор в админке, условие if ) -->
+							<a href="#" class="button button--secondary _icon-arrow"><span>button</span></a>
+						</div>
+						<div class="info-section__media">
+							<div class="info-section__image">
+								<img src="img/showroom.jpg" alt="VR Showroom">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль partners -->
+			<section class="partners">
+				<div class="partners__container">
+					<div class="partners__header">
+						<div class="partners__label">Partneři projektu</div>
+						<h2 class="partners__title">Partneři</h2>
+						<h4 class="partners__subtitle">Na projektu spolupracujeme s partnery, kteří sdílejí náš důraz na kvalitu, detail a dlouhodobou hodnotu.</h4>
+					</div>
+					<div class="partners__body">
+						<div class="partners__items">
+							<div class="partners__item">
+								<img src="img/hanak.svg" alt="Hanak Centrum">
+							</div>
+							<div class="partners__item">
+								<img src="img/hanak.svg" alt="Hanak Centrum">
+							</div>
+							<div class="partners__item">
+								<img src="img/hanak.svg" alt="Hanak Centrum">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль relevation-block -->
+			<section class="relevation-block">
+				<div class="relevation-block__container">
+					<div class="relevation-block__body">
+						<div class="relevation-block__label">Aktuální stav</div>
+						<h2 class="relevation-block__title">Aktuálně</h2>
+						<div class="relevation-block__info">
+							<p>Projekt je v současné době ve fázi projekčních prací. Prodej bytů bude zahájen až ve chvíli, kdy bude vše připraveno v kvalitě, kterou projekt Viladomy Labská dlouhodobě deklaruje.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль contact-block -->
+			<section class="contact-block">
+				<div class="contact-block__container">
+					<div class="contact-block__body">
+						<div class="contact-block__header">
+							<h2 class="contact-block__title">Sjednat schůzku</h2>
+							<h4 class="contact-block__subtitle">Pro individuální dotazy nebo domluvení osobní konzultace nás neváhejte kontaktovat.</h4>
+						</div>
+						<form class="contact-block__form form">
+							<div class="form__row">
+								<label for="name">Vaše jméno: <span>*</span></label>
+								<input class="input" type="text" id="name" name="name" placeholder="Zadejte své jméno a příjmení" required>
+							</div>
+							<div class="form__row">
+								<label for="email">Váš e-mail: <span>*</span></label>
+								<input class="input" type="email" id="email" name="email" placeholder="Zadejte váš e-mail" required>
+							</div>
+							<div class="form__row">
+								<label for="tel">Váš telefon: <span>*</span></label>
+								<input class="input" type="tel" id="tel" name="tel" placeholder="Zadejte své telefonní číslo" required>
+							</div>
+							<div class="form__row">
+								<label for="message">Vaše poptávka / dotaz: <span>*</span></label>
+								<textarea class="input" id="message" name="message" placeholder="Zadejte text poptávky / dotazu" required></textarea>
+							</div>
+							<div class="form__row form__row--checkbox">
+								<input class="input" type="checkbox" id="gdpr" name="gdpr" required>
+								<label for="gdpr">Souhlasíte se <a href="#"><strong>zpracováním osobních údajů</strong></a>.</label>
+							</div>
+							<button class="form__button" type="submit"><span>ODESLAT</span></button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- Модуль map-section -->
+			<section class="js-map-section">
+				<div class="js-map-marker" data-lat="50.02952" data-lng="15.77069" data-icon="img/ic_baseline-place.svg">
+				</div>
+				<div class="js-map" data-zoom="16" data-lat="50.02952" data-lng="15.77069" data-max-zoom="18">
+				</div>
+			</section>
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.0373651123655!2d15.768079777138892!3d50.02939567151478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dcc97345e3aeb%3A0x866e3f60cbbaea07!2sJ.%20Palacha%202944%2C%20530%2002%20Pardubice%20V!5e0!3m2!1sru!2scz!4v1774518088963!5m2!1sru!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__info info-footer">
+						<a href="#" class="info-footer__logo">
+							<img src="img/logo.svg" alt="Logo">
+						</a>
+						<div class="info-footer__text">
+							<p><strong>Máte zájem o nové bydlení?</strong></p>
+							<p>Neváhejte nás kontaktovat, rádi se Vám budeme věnovat</p>
+						</div>
+						<div class="info-footer__contact info-contact">
+							<div class="info-contact__image">
+								<img src="img/Martin.png" alt="Martin Socha">
+							</div>
+							<div class="info-contact__body">
+								<div class="info-contact__name">Martin Socha, MBA</div>
+								<div class="info-contact__position">Obchodní ředitel, CFIG Real Estate</div>
+								<a href="tel:+420775889325" class="info-contact__phone _icon-phone"><span>+420 775 889 325</span></a>
+								<a href="mailto:info@viladomylabska.cz" class="info-contact__mail _icon-email"><span>info@viladomylabska.cz</span></a>
+							</div>
+						</div>
+						<div class="info-footer__social">
+							<ul class="socials-info">
+								<li class="socials-info__link">
+									<a href="#" class="_icon-facebook" target="_blank"></a>
+								</li>
+								<li class="socials-info__link">
+									<a href="#" class="_icon-insta" target="_blank"></a>
+								</li>
+								<li class="socials-info__link">
+									<a href="#" class="_icon-pinterest" target="_blank"></a>
+								</li>
+								<li class="socials-info__link">
+									<a href="#" class="_icon-linkedin" target="_blank"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__form form-footer">
+						<div class="form-footer__label">Získejte přednostní informace o nových projektech a příležitostech.</div>
+						<form class="cfig-nl" data-cfig-nl data-cfig-bound="1">
+							<div class="cfig-nl__line">
+								<input class="input" type="email" name="email" placeholder="Vložte Váš e-mail" required>
+							</div>
+							<button type="submit">Odebírat novinky</button>
+							<div class="cfig-nl__msg" aria-live="polite"></div>
+						</form>
+					</div>
+					<div class="footer__contact contact-footer">
+						<div class="contact-footer__header">
+							<a href="#" class="contact-footer__logo">
+								<img src="img/CFIG-logo.svg" alt="CFIG Logo">
+							</a>
+							<div class="contact-footer__label">člen skupiny CFIG</div>
+						</div>
+						<div class="contact-footer__body">
+							<div class="contact-footer__address">Jana Palacha 2944, 530 02 Pardubice</div>
+							<a href="tel:+420775889325" class="contact-footer__phone _icon-phone"><span>+420 775 889 325</span></a>
+							<a href="mailto:info@cfigrealestate.cz" class="contact-footer__mail _icon-email"><span>info@cfigrealestate.cz</span></a>
+							<a href="https://www.cfigrealestate.cz" class="contact-footer__link" target="_blank">www.cfigrealestate.cz</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__privacy">
+				<div class="footer__gdpr gdpr-footer">
+					<ul class="gdpr-footer__items">
+						<li class="gdpr-footer__item">
+							<a href="#" class="gdpr-footer__link">Prohlášení o přístupnosti</a>
+						</li>
+						<li class="gdpr-footer__item">
+							<a href="#" class="gdpr-footer__link">GDPR</a>
+						</li>
+						<li class="gdpr-footer__item">
+							<a href="#" class="gdpr-footer__link">Cookies</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__copy">© 2026 Viladomy Labská – všechna práva vyhrazena, vyrobilo CFIG SE</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20260331134028"></script>
+</body>
+
+</html>
